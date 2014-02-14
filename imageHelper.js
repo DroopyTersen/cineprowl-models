@@ -28,6 +28,9 @@ var imageHelper = function(argument) {
 		},
 		getMid: function(filename) {
 			return buildLink("w780", filename);
+		},
+		getThumb: function(filename) {
+			return buildLink("w300");
 		}
 	};
 

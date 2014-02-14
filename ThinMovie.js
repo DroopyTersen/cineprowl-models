@@ -7,7 +7,7 @@ var ThinMovie = function (result) {
 	this.file = { quality: result.file.quality };
 	this.mpaa = result.mpaa;
 	this.tagline = result.tagline;
-	this.backdrop = imageHelper.backdrop.getFull(result.backdrop_path);
+	this.backdrop = imageHelper.backdrop.getMid(result.backdrop_path);
 	this.posterThumb = imageHelper.poster.getThumb(result.poster_path);
 	this.castStr = result.casts.cast.map(function(castMember){
 		return castMember.name;
@@ -21,6 +21,7 @@ ThinMovie.fields = {
 		id: 1,
 		rating: 1,
 		poster_path: 1,
+		backdrop_path: 1,
 		release_date: 1,
 		"file.quality": 1,
 		mpaa: 1,
