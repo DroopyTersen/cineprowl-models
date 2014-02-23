@@ -9,6 +9,7 @@ var ThinMovie = function (result) {
 	this.tagline = result.tagline;
 	this.backdrop = imageHelper.backdrop.getMid(result.backdrop_path);
 	this.posterThumb = imageHelper.poster.getThumb(result.poster_path);
+	this.watched = result.watched;
 	this.castStr = result.casts.cast.map(function(castMember){
 		return castMember.name;
 	}).join(", ");
@@ -26,7 +27,8 @@ ThinMovie.fields = {
 		"file.quality": 1,
 		mpaa: 1,
 		"casts.cast": {"$slice": 2 },
-		tagline: 1
+		tagline: 1,
+		watched: 1
 };
  
 module.exports = ThinMovie;
