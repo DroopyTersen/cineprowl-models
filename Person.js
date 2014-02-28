@@ -31,7 +31,7 @@ var Person = function (person, owned) {
 		};
 	});
 	this.filmography = this.filmography.sort(function(a, b) {
-		return a.releaseStr < b.releaseStr ? 1 : -1;
+		return new Date(a.releaseStr) < new Date(b.releaseStr) ? 1 : -1;
 	});
 };
 
