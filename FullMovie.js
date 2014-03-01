@@ -12,7 +12,7 @@ module.exports = {
 		var date = new Date(movie.release_date);
 		movie.release_date = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
 		movie.nasUrl = "https://runwatcher.com/manage/shares/Movies/";
-		movie.nasUrl += movie.file.library.replace("\\\\ix4-300d\\movies\\", "");
+		movie.nasUrl += movie.file.library.replace(/\\\\ix4-300d\\movies\\/i, "");
 		movie.nasUrl += "/" + movie.file.parentFolder + "/" + movie.file.filename;
 		return movie;
 	}
