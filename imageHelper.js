@@ -7,8 +7,8 @@ var imageHelper = function(argument) {
 		// logoSizes = ["w45", "w92", "w154", "w185", "w300", "w500", "original"];
 
 	var buildLink = function(size, filename) {
-		if (filename == null) {
-			return "";
+		if (!filename || filename === "") {
+			return "/images/logo-small.png";
 		}
 		return baseUrl + size + "/" + filename;
 	};
