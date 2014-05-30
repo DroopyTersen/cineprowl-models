@@ -1,0 +1,11 @@
+{
+  "name": "CineProwl-Models",
+  "version": "0.0.0",
+  "description": "CineProwl model layer",
+  "author": "Andrew Petersen",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DroopyTersen/cineprowl-models"
+  }
+}
