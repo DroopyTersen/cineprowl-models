@@ -1,6 +1,6 @@
 {
   "name": "CineProwl-Models",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CineProwl model layer",
   "author": "Andrew Petersen",
   "main": "index.js",
