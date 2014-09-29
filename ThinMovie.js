@@ -27,6 +27,7 @@ ThinMovie.fields = {
 		"file.quality": 1,
 		mpaa: 1,
 		"casts.cast": {"$slice": 2 },
+		"casts.crew":  {"$slice": 2 },
 		tagline: 1,
 		watched: 1
 };
