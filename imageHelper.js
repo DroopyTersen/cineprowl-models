@@ -1,6 +1,6 @@
 
 var imageHelper = function(argument) {
-	var baseUrl = "http://d3gtl9l2a4fn1j.cloudfront.net/t/p/";
+	var baseUrl = "http://image.tmdb.org/t/p/";
 		// posterSizes = ["w92", "w154", "w185", "w342", "w500", "original"],
 		// backdropSizes = ["w300", "w780", "w1280", "original"],
 		// profileSizes = ["w45", "w185", "h632", "original"],
