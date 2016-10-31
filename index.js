@@ -1,4 +1,4 @@
-exports.ThinMovie = require("./ThinMovie");
-exports.FullMovie = require("./FullMovie");
-exports.Person = require("./Person");
-exports.imageHelper = require("./imageHelper");
+exports.ThinMovie = require("./src/ThinMovie");
+exports.FullMovie = require("./src/FullMovie");
+exports.Person = require("./src/Person");
+exports.imageHelper = require("./src/imageHelper");
